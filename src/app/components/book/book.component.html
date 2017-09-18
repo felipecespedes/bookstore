@@ -1,0 +1,12 @@
+<div class="book">
+  <div class="details" [class.selected]="book.isSelected">
+    <h1 class="title">{{book.title}}</h1>
+    <p class="description">{{book.description}}</p>
+    <p class="author">{{book.author}}</p>
+    <p class="year">{{book.publishedDate | date:'y'}}</p>
+    <p class="isbn"><span class="emphasis">ISBN: </span>{{book.isbn}}</p>
+    <button class="btn-action" (click)="onSelect()">
+      {{book.isSelected ? 'Deselect' : 'Select'}}
+    </button>
+  </div>
+</div>

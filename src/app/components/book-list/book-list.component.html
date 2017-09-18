@@ -1,0 +1,8 @@
+<div class="book-list">
+  <div class="books-info">
+      <p>Selected books: <span class="count">{{selectedBooks}}</span></p>
+  </div>
+  <div class="book-entry" *ngFor="let book of books">
+    <app-book [book]="book" (selectionChanged)="updateSelectedBooks($event)"></app-book>
+  </div>
+</div>

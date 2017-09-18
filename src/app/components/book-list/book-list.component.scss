@@ -1,0 +1,25 @@
+.book-list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px 0;
+
+  .book-entry {
+    flex: 0 0 33%;
+  }
+
+  .books-info {
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid #c0c0c0;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: #2196F3;
+    color: white;
+    z-index: 5;
+
+    .count {
+      font-weight: bold;
+    }
+  }
+}
